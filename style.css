@@ -13,6 +13,13 @@ html {
   background-size: cover;
 }
 
+body {
+  margin: 0 10%;
+}
+
+/*  **************             **************
+    **************    HEADER   **************
+    **************             ************** */
 header {
   height: 80vh;
   width: 95%;
@@ -20,7 +27,7 @@ header {
       rgba(0, 0, 0, 0.4)),
     url(img/forest.jpg) no-repeat center center;
   background-size: cover;
-  margin: 0 auto;
+  margin: 3% auto 0 auto;
   border: 20px solid white;
   position: relative;
 }
@@ -37,7 +44,7 @@ header h1 {
   padding: 10px;
 }
 
-#icona {
+.fa-mountain {
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -48,14 +55,18 @@ header h1 {
 
 header p {
   color: white;
-  font-size: 28px;
+  font-size: 26px;
   text-transform: uppercase;
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
+  margin-top: 5%;
 }
 
+/*  **************             **************
+    **************   NAV BAR   **************
+    **************             ************** */
 nav {
   background-color: rgba(86, 86, 86, 0.9);
   width: 95%;
@@ -88,6 +99,9 @@ nav a:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+/*  **************             **************
+    **************    MAIN     **************
+    **************             ************** */
 main {
   width: 100%;
   margin: 20px 0;
@@ -106,39 +120,91 @@ main {
   width: 50%;
 }
 
+/*  **************             **************
+    **************   MAIN SX   **************
+    **************             ************** */
 #feeds {
   background-color: white;
-  opacity: 0.9;
   width: 80%;
   text-align: center;
-  padding: 20px 20px;
+  padding: 5% 5%;
   margin: auto;
+  border-radius: 10px;
 }
 
+.fa-rss-square {
+  color: orange;
+  font-size: 30px;
+  width: 50%;
+  float: left;
+  margin: 10% 5% 10% 5%;
+}
+
+#feeds h2 {
+  width: 50%;
+  float: left;
+  margin: 2% 5% 10% 0;
+}
+
+.contenutosinistra {
+  margin: 40% 0 0 0;
+  padding: 0 10%;
+}
+
+.contenutosinistra a {
+  text-decoration: none;
+  color: green;
+  padding: 10% 0 10% 0;
+  display: block;
+  text-align: left;
+}
+
+/*  **************             **************
+    ************** MAIN CENTRO **************
+    **************             ************** */
 #primacentrale {
   background-color: white;
-  opacity: 0.9;
-  width: 80%;
-  text-align: center;
-  padding: 20px 20px;
+  width: 90%;
+  text-align: left;
+  padding: 5% 5%;
   margin: auto;
+  border-radius: 10px;
 }
 
-#primowidget {
+#primacentrale h1 {
+  margin-bottom: 8%;
+}
+
+/*  **************             **************
+    **************   MAIN DX   **************
+    **************             ************** */
+.widget {
   background-color: white;
-  opacity: 0.9;
   width: 80%;
-  text-align: center;
-  padding: 20px 20px;
-  margin: auto;
+  text-align: left;
+  padding: 5% 10%;
+  margin: 10% auto;
+  border-radius: 10px;
 }
 
+.widget h2 {
+  margin-bottom: 25%;
+  text-align: center;
+}
+
+.widget p {
+  margin-bottom: 10%;
+}
+
+/*  **************             **************
+    **************   FOOTER    **************
+    **************             ************** */
 footer {
   width: 95%;
   background-color: white;
   opacity: 0.9;
   text-align: center;
-  margin: 150px 2.5% 0 2.5%;
+  margin: 10% 2.5% 0 2.5%;
   display: inline-block;
 }
 
@@ -146,4 +212,30 @@ footer p {
   padding: 30px 0;
   color: grey;
   font-size: 20px;
+}
+
+.contenitoreloghi {
+  width: 33.33%;
+  float: left;
+  margin: 2% 0;
+}
+
+.fa-facebook-square {
+  color: lightgrey;
+  font-size: 50px;
+}
+
+.fa-instagram {
+  color: lightgrey;
+  font-size: 50px;
+}
+
+.fa-github {
+  color: lightgrey;
+  font-size: 50px;
+}
+
+hr.hrgrgigio {
+  display: fixed;
+  margin: 0 5%;
 }
